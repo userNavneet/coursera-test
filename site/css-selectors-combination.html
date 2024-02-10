@@ -5,7 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Combining-selectors</title>
 	<style type="text/css">
-		
+		.head {
+
+			color: blueviolet;
+		}
+
+		.paragraph p {
+
+			color: blue;
+		}
+		section > p {
+
+			color:darkred;
+		}
+		section h2 {
+
+			color: yellow;
+		}
 	</style>
 </head>
 <body>
@@ -25,7 +41,7 @@
 	</section>
 	<h2>Subheading 1</h2>
 	<section>
-		<article class="head paragraph">
+		<article class="paragraph">
 			<p>Hello I am a dummy paragraph and I am an example of class selector</p>
 		</article>
 	</section>
