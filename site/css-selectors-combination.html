@@ -5,55 +5,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Combining-selectors</title>
 	<style type="text/css">
-		.head {
+		h1.center {
 
-			color: blueviolet;
+			text-align: center;
+			color: darkred;
 		}
+		h1 {
 
-		.paragraph p {
+			color: purple;
+		}
+		p.color {
+
+			text-align: center;
+			color: red;
+		}
+		p.color.blue {
 
 			color: blue;
+			text-align: center;
 		}
-		section > p {
+		article > p {
 
-			color:darkred;
+			font-style: italic;
+			background-color: lightpink;
+			color: blue;
 		}
-		section h2 {
+		div.desc li {
 
-			color: yellow;
+			color: green;
 		}
+
 	</style>
 </head>
 <body>
-	<h1 class="head">Combining CSS selectors</h1>
+		<h1 class="center">Element with class selector</h1>
+		<p class="color blue">Hi, I am a paragraph and I want blue color</p>
+		<p class="color">Hello I am a paragraph and I want red color</p>
 	<div>
-		<section>
-			<p>Hi, I am a dummy paragraph and I am green colored text and example of child selector in CSS</p>		
-		</section>
-	</div>
-	<section>
-		<ul>
-			<li><h2>Descendant Selector</h2></li>
-			<li>First item</li>
-			<li>Second item</li>
-			<li>Third item</li>
-		</ul>
-	</section>
-	<h2>Subheading 1</h2>
-	<section>
-		<article class="paragraph">
-			<p>Hello I am a dummy paragraph and I am an example of class selector</p>
+		<article>
+			<h1 class="center">Child Selector</h1>
+			<p>Sagittis purus sit amet volutpat. Mi in nulla posuere sollicitudin aliquam ultrices. Fames ac turpis egestas integer eget aliquet nibh praesent. Scelerisque eleifend donec pretium vulputate sapien nec. Feugiat vivamus at augue eget arcu dictum varius duis. Ultrices dui sapien eget mi. Integer enim neque volutpat ac tincidunt vitae semper. Dictum at tempor commodo ullamcorper. Amet purus gravida quis blandit turpis. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ut venenatis tellus in metus vulputate eu scelerisque felis.</p>
 		</article>
-	</section>
-	<div>
-		<p>
-			The quick brown fox jumps over the lazy dog.
-		</p>
 	</div>
-	<div>
-		<p>
-			Paragraph element with class selector in css.
-		</p>
+	<div class="desc">
+		<section>
+			<article>
+				<h1>Descendant Selector</h1>
+				<ul>
+					<li><h2>Tech Top</h2></li>
+					<li>Google</li>
+					<li>Microsoftd</li>
+					<li>Apple</li>
+				</ul>
+			</article>
+		</section>
 	</div>
 </body>
 </html>
