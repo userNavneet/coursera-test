@@ -5,15 +5,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pseudo-selector</title>
 	<style type="text/css">
-		
+		h1 {
+
+			color: darkred;
+			text-align: center;
+		}
+		header li{
+
+			list-style: none;
+		}
+		a:link, a:visited{
+
+			background-color:powderblue;
+			text-decoration: none;
+			display: block;
+			border: 2px solid black;
+			width: 200px;
+			color: black;
+			text-align: center;
+			margin-bottom: 2px;
+		}
+		a:hover{
+
+			background-color: aqua;
+			cursor: progress;
+		}
+		div:hover{
+
+			background-color: aqua;
+			cursor: pointer;
+		}
+		div:nth-child(odd){
+
+			background-color: powderblue;
+		}
+
 	</style>
 </head>
 <body>
 <h1>Pseudo Selectors In CSS</h1>
 <header>
-	<a href="index.html">Home</a>
-	<a href="Basic-CSS.html">CSS file</a>
-	<a href="Selectors-css.html">CSS Selectors</a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Basic-CSS.html">CSS file</a></li>
+		<li><a href="Selectors-css.html">CSS Selectors</a></li>
+	</ul>
 </header>
 <secton>
 	<div>Div number 1</div>
