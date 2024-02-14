@@ -4,12 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Display-Image</title>
+	<style type="text/css">
+		body{
+
+			background-color: lightgray;
+		}
+		.logos img{
+
+			width: 20%;
+			aspect-ratio: 3/2;
+			object-fit: contain;
+			mix-blend-mode: color-burn;
+		}
+		h1{
+
+			color: darkred;
+		}
+
+	</style>
 </head>
 <body>
 	<div><a href="/index.html"><button>Home</button></a></div>
-<h2>This is an example of displaying image in html</h2>
-<div>
-	<img src="/weather.png" alt="Weather Image" height="250" width="540">
+<h1>Car brand logos- displayed</h1>
+<div class="logos">
+	<img src="/mini.jpeg">
+	<img src="/toyota.jpeg">
+	<img src="/Alfa-Romeo.jpg">
+	<img src="/mahindra.jpg">
 </div>
 </body>
 </html>
