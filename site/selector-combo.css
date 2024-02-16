@@ -1,0 +1,29 @@
+h1.center {
+
+			text-align: center;
+			color: darkred;
+		}
+		h1 {
+
+			color: purple;
+		}
+		p.color {
+
+			text-align: center;
+			color: red;
+		}
+		p.color.blue {
+
+			color: blue;
+			text-align: center;
+		}
+		article > p {
+
+			font-style: italic;
+			background-color: lightpink;
+			color: blue;
+		}
+		div.desc li {
+
+			color: green;
+		}

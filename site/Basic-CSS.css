@@ -1,0 +1,32 @@
+		h1{
+			text-align: center;
+			color: darkred;
+		}
+		p{
+			text-align: center;
+			color: blueviolet;
+			font-size: 20px;
+		}
+		button {
+			
+			background-color: bisque;
+			font-size: 15px;
+		}
+		h3{
+			color: purple;
+			text-align: center;
+		}
+		div {
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-left: 600px;
+			background-color: beige;
+		}
+
+		.bt {
+
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-left: 575px;
+			background-color: beige;
+		}

@@ -1,0 +1,20 @@
+body{
+
+			background-color: lightgray;
+		}
+		.logos img{
+
+			width: 10%;
+			aspect-ratio: 3/2;
+			object-fit: contain;
+			mix-blend-mode: color-burn;
+			
+		}
+		h1{
+
+			color: black;
+		}
+		img:hover{
+
+			cursor: pointer;
+		}

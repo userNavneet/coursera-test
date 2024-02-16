@@ -1,0 +1,17 @@
+body{
+	background-color: beige;
+	font-size: 150%;
+}
+a.ext{
+
+	text-decoration: none;
+	color: beige;
+	display: block;
+	background-color: darkred;
+	border: 2px solid black;
+	width: 200px;
+}
+a.ext:hover{
+
+	background-color: purple;
+}
