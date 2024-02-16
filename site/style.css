@@ -1,0 +1,14 @@
+body{
+	background-color: beige;
+	font-size: 150%;
+}
+p{
+	color: blue;
+	text-align: center;
+	font-style: italic;
+}
+button{
+
+	font-size: 20px;
+}
+/*we are using exernal css to apply style to these elements in a different file*/
