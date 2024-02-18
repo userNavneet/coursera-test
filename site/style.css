@@ -1,11 +1,14 @@
 body{
 	background-color: beige;
 	font-size: 150%;
+	color: black;
+	text-align: center;
 }
 p{
 	color: blue;
 	text-align: center;
 	font-style: italic;
+	background-color: bisque;
 }
 button{
 

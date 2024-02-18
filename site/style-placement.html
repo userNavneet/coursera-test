@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="/style.css">
 	<style type="text/css">
 		h1{
-			text-align: center;
 			color: darkred;
 			cursor: pointer;
 		}
@@ -20,15 +19,19 @@
 
 			color: purple;
 		}
+		p{ /*though p had background-color: bisque; through external css but origin precedence in css prefers this p styling because it is later in the sequence*/
+			background-color: lightpink;
+		}
 		/*we are using internal css to style these elements that we selected in the style tag*/
 	</style>
 </head>
 <body>
-	<h1>Style placement in css</h1>
+	<h1>Style placement in css and origin precedence, merge, inheritance</h1>
+
 	<div>
 		<h3 style="color: darkred;">Three ways to style a webpage</h3>
 		<!-- we used inline css to style h3 -->
-		<ul>
+		<ul style="list-style: none;">
 			<li>Inline css</li>
 			<li>Inernal css</li>
 			<li>External css</li>
@@ -37,10 +40,12 @@
 	<section>
 		<article>
 			<p>I am a paragraph, I want blue color and I want to be italic also I desire to be in the centre</p>
+			<p style="color:red; font-size: 50%; text-align: right;">this paragraph is an example of origin precedence and using inline css so this dosen't follow the previous css styles applied to it</p>
 		</article>
 	</section>
 	<div>
 		<a href="/Basic-CSS.html"><button>CSS</button></a>
+		<p>this page also follows the inheritance property of css because one style is applied to the body  tag and all the elements inside the body tag will get affected by that</p>
 	</div>
 </body>
 </html>
