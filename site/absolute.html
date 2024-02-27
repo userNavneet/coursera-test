@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Absolute positioning</title>
+	<style type="text/css">
+		body{
+
+			background-color: coral;
+			font-size: 120%;
+		}
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+		h1{
+			text-align: center;
+			padding-bottom: 20px;
+			color: darkblue;
+		}
+		div{
+			
+			background-color: lightblue;
+			position: relative;
+			top: 80px;
+/*			this div is relatively positioned */
+		}
+		p{
+			height: 50px;
+			width: 50px;
+			border: 2px solid black;
+			margin-bottom: 10px;
+			border-radius: 10px;
+		}
+		#p1{
+
+			background-color: red;
+			position: relative;
+			top: 60px;
+			left: 60px;
+		}
+		#p2{background-color: blue;}
+		#p3{background-color: green;}
+		#p4{
+/*we are positioning this p absolute and placing it on top of the previous position of p1*/
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: yellow;
+		}
+		#p5{background-color: brown;}
+	</style>
+</head>
+<body>
+	<h1>Absolute positining in css</h1>
+	<div>
+		<p id="p1"></p>
+		<p id="p2"></p>
+		<p id="p3"></p>
+		<p id="p4"></p>
+		<p id="p5"></p>
+	</div>
+</body>
+</html>
