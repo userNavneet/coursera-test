@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Medea Query</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			background-color: beige;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		h1{
+
+			margin: 20px;
+			color: darkred;
+		}
+		#big{
+
+			border: 2px solid black;
+			background-color: purple;
+			height: 200px;
+			width: 400px;
+		}
+		#small{
+
+			border: 2px solid black;
+			background-color: lightblue;
+			height: 100px;
+			width: 100px;
+		}
+		@media (min-width: 700px) {
+
+			#big{
+				width: 100%;
+			}
+			#small{
+				width: 200px;
+				height: 200px;
+			}
+
+		}
+		@media (min-width: 400px) and (max-width:699px) {
+			#big{
+				width: 50%;
+			}
+			#small{
+				height: 50px;
+				width: 50px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Media Query</h1>
+	<p id="big"></p>
+	<p id="small"></p>
+</body>
+</html>
