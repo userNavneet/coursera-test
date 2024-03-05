@@ -6,12 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body{
+            background-color: pink;
+        }
+        .row{
+            margin-bottom: 20px;
+        }
+        .row > div{
+            background-color: #0b1215;
+            color: beige;
+            border: 2px solid beige;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello bootstrap</h1>
     <div class="container">
         <div class="row">
-            <p>this is a webpage using bootstrap</p>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-10">Column 1</div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-10">Column 2</div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-10">Column 3</div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-10">Column 4</div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-10">Column 5</div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-10">Column 5</div>
+        </div>
+        <div class="row">
+            <div class=" col-xs-10">Column 1</div>
+            <div class=" col-xs-10">Column 2</div>
+            <div class=" col-xs-10">Column 3</div>
+            <div class=" col-xs-10">Column 4</div>
+            <div class=" col-xs-10">Column 5</div>
+            <div class=" col-xs-10">Column 5</div>
         </div>
     </div>
     <script src="js/jquery-3.7.1.min.js"></script>
